@@ -16,9 +16,9 @@ class FamilyStructure:
         self._members = [
             {
                 "id": self._generateId(),
-                "first_name": "Javi",
+                "first_name": "Johanna",
                 "last_name": last_name,
-                "age": 26,
+                "age": 23,
                 "lucky_numbers": [17,22,5]
             },
             {   
@@ -54,7 +54,6 @@ class FamilyStructure:
                 self._members.remove(member)
                 return True
             return False
-        pass
 
     def get_member(self, id):
         # fill this method and update the return
@@ -62,7 +61,6 @@ class FamilyStructure:
             if member["id"] == id:
                 return member
             return None
-        pass
 
     # this method is done, it returns a list with all the family members
     def get_all_members(self):
